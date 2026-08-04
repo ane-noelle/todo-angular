@@ -1,0 +1,12 @@
+git config --global user.name ane-noelle
+git config --global user.email anenoelle60@gmail.com
+
+--- Verificar ambiente Angular
+node -v
+npm -v
+ng version
+
+--Instalar o Angularnpm install -g @angular/cli
+
+-- Criar um projeto Angular
+ng new todo-angular --routing=false --style=css --skip-tests --standalone --ssr=false --file-name-style-guide=2025 --defaults

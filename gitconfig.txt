@@ -10,3 +10,22 @@ ng version
 
 -- Criar um projeto Angular
 ng new todo-angular --routing=false --style=css --skip-tests --standalone --ssr=false --file-name-style-guide=2025 --defaults
+
+-- Resoluções de problemas de execução
+npm config get prefix 
+
+-- Copiar o caminho que o comando trouxe no Path das variáveis do sistema
+
+-- Para executar o projeto
+cd todo-angular
+ng serve --open
+
+-- para restaurar o projeton clonado
+cd todo-angular
+npm i
+
+--para criar componentes e serviços (não pode estar executando o projeto)
+ng generate component components/todo-from  --skip-tests
+ng generate component components/todo-list  --skip-tests
+ng generate component components/todo-item --skip-tests
+ng generate service services/todo-store --skip-tests

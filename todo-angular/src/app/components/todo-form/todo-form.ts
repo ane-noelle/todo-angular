@@ -7,7 +7,7 @@ import { FormsModule } from '@angular/forms';
   templateUrl: './todo-from.html',
   styleUrl: './todo-from.css',
 })
-export class TodoFrom {
+export class TodoForm {
 readonly todoAdded = output<string>();
 title = '';
 

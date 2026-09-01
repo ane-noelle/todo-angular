@@ -1,6 +1,6 @@
 <li class="todo-item" [class.completed]="todo().completed">
     <label>
-        <input
+        <input 
             type="checkbox"
             [checked]="todo().completed"
             (change)="todoToggled.emit(todo().id)"
@@ -9,7 +9,7 @@
     </label>
     <button
         type="submit"
-        [attr.aria-label]="'Excluir a tarefa' + todo().title"
+        [attr.aria-label]="'Excluir a tarefa ' + todo().title"
         (click)="todoRemoved.emit(todo().id)"
     >Excluir</button>
 </li>
